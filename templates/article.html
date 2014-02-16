@@ -54,6 +54,25 @@
             </section>
             {{ article.content }}
             <div class="hr"></div>
+
+            <!-- Add neighbouring articles from neighbours plugin -->
+             <ul id="neighbors-list">
+                 {% if article.prev_article %}
+                     <li id="neighbors-previous">
+                         <a href="{{ SITEURL }}/{{ article.prev_article.url}}">
+                             {{ article.prev_article.title }}
+                         </a>
+                     </li>
+                 {% endif %}
+                 {% if article.next_article %}
+                     <li id="neighbors-next">
+                         <a href="{{ SITEURL }}/{{ article.next_article.url}}">
+                             {{ article.next_article.title }}
+                         </a>
+                     </li>
+                 {% endif %}
+            </ul>
+
             <a href="#" class="go-top">Go Top</a>
             {% if DISQUS_SITENAME %}
                 {% include 'disqus.html' %}
