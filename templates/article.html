@@ -49,6 +49,9 @@
                 </header>
             </section>
             {{ article.content }}
+            {% if article and article.modified %}
+            Last modified: {{ article.modified }}
+            {% endif %}
             <div class="hr"></div>
             <a href="#" class="go-top">Go Top</a>
             {% if DISQUS_SITENAME %}
