@@ -32,6 +32,10 @@
                 <small class="about-author">{{ article.about_author }}</small>
                 <h5>Published</h5>
                 <p>{{ article.locale_date }}</p>
+                {% if article and article.modified %}
+                <h5>Last modified</h5>
+                <p>{{ article.modified }}</p>
+                {% endif %}
                 <a href="/">&larr;Home</a>
             </hgroup>
         </header>
@@ -49,9 +53,6 @@
                 </header>
             </section>
             {{ article.content }}
-            {% if article and article.modified %}
-            Last modified: {{ article.modified }}
-            {% endif %}
             <div class="hr"></div>
             <a href="#" class="go-top">Go Top</a>
             {% if DISQUS_SITENAME %}
