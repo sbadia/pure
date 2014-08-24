@@ -22,6 +22,10 @@
         <title>{% block title %}{{ SITENAME }} // {{ TAGLINE }}{% endblock title %}</title>
     {% endblock head %}
 
+    {% if FAVICON %}
+    <link href="{{ SITEURL }}/{{ FAVICON }}" rel="icon">
+    {% endif %}
+
     <link rel="stylesheet" href="{{ SITEURL }}/extra/pure-min.css">
     <link rel="stylesheet" href="{{ SITEURL }}/extra/css/font-awesome.min.css">
     <link rel="stylesheet" href="{{ SITEURL }}/theme/css/pure.css">

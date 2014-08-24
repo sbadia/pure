@@ -6,7 +6,7 @@ Theme is responsive.
 
 ## PELICANCONF.PY
 
-* `COVER_IMG_URL` - Set the sidebar image.
+* `COVER_IMG_URL` - Set the sidebar image for homepage.
 * `PROFILE_IMAGE_URL` - Set the image/logo for the top circle cutout on sidebar.
 * `TAGLINE` - Used for the page titles and some meta tags.
 * `DISQUS_SITENAME` - Set this to enable disqus comments in articles.
@@ -38,3 +38,4 @@ See it live at [testpy.org](http://testpy.org/)
 
 ## Aditional features
 * [FitVids](https://github.com/davatron5000/FitVids.js) jQuery plugin for fluid width video embeds.
+* [Math Render Ability](https://github.com/getpelican/pelican-plugins/tree/master/render_math) *render_math* plugin for using MathJax to render both MathML and LaTex.
